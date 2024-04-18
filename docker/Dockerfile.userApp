@@ -16,4 +16,4 @@ RUN npm run db:prisma-generate
 # To Build all the Contents inside Apps
 RUN npm install build 
 
-CMD ["npm","run","start-user-app"]
+CMD ["npm","run","scd ./apps/user-app && npm run start"]
