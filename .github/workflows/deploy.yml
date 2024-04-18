@@ -24,10 +24,10 @@ jobs:
         context: .
         file: ./docker/Dockerfile.userApp
         push: true
-        tags: nishan321/financeapplicationnextjs 
+        tags: nishan321/financeapplicationnextjs:latest
 
     - name: Verify Pushed Image
-      run: docker pull nishan321/financeapplicationnextjs # Replace with your Docker Hub username and repository
+      run: docker pull nishan321/financeapplicationnextjs:latest # Replace with your Docker Hub username and repository
     
     - name: Deploy to EC2
       uses: appleboy/ssh-action@master
