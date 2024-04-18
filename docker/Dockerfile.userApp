@@ -20,3 +20,6 @@ RUN npm install build
 
 WORKDIR /usr/src/app/apps/user-app
 CMD npm run start
+
+
+
