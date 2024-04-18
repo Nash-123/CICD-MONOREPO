@@ -36,7 +36,7 @@ jobs:
         username: ${{ secrets.SSH_USERNAME }}
         key: ${{ secrets.SSH_KEY }}
         script: |
-          sudo docker pull nishan321/financeapplicationnextjs
+          sudo docker pull nishan321/financeapplicationnextjs:latest
           sudo docker stop financeapplicationnextjs || true
           sudo docker rm financeapplicationnextjs || true
-          sudo docker run -d --name financeapplicationnextjs -p 3005:3000 nishan321/financeapplicationnextjs
+          sudo docker run -d --name financeapplicationnextjs -p 3005:3000 nishan321/financeapplicationnextjs:latest
